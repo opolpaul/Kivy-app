@@ -19,7 +19,6 @@ source.exts = py,png,jpg,kv,atlas
 version = 0.1
 
 # (list) Application requirements
-# Add other dependencies like kivymd if needed
 requirements = python3,kivy
 
 # (str) Supported orientations
@@ -42,15 +41,15 @@ android.api = 33
 android.minapi = 21
 
 # (str) Android SDK version to use
-# android.sdk = 20
+android.sdk = 33
 
-# (str) ANT version to use
-# android.ant_version = 1.9.4
+# (str) Android NDK version to use
+android.ndk = 25b
 
-# (bool) Use Android TabLayout
-# android.tablayout = True
+# (bool) Indicate whether the user agrees to the Android SDK license
+android.accept_sdk_license = True
 
-# (list) The Android archs to build for,, choices: armeabi-v7a, arm64-v8a, x86, x86_64
+# (list) The Android archs to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 android.archs = arm64-v8a, armeabi-v7a
 
 [buildozer]
@@ -60,4 +59,3 @@ log_level = 2
 
 # (int) Display warning if buildozer is run as root (0 = False, 1 = True)
 warn_on_root = 1
-
