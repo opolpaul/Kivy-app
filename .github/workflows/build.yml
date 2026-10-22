@@ -36,7 +36,7 @@ jobs:
             zlib1g-dev
 
     - name: Build with Buildozer
-      uses: ArtemSBulgakov/buildozer-action@v4
+      uses: ArtemSBulgakov/buildozer-action@v1
       id: buildozer
       with:
         command: buildozer android debug
